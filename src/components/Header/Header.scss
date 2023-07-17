@@ -1,0 +1,56 @@
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 66px;
+    background-color: white;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 75px;
+    }
+
+    a {
+        color: var(--unnamed-color-221f20); // or directly use color: #221F20;
+        text-align: left;
+        font: normal normal bold 13px/16px Josefin Sans;
+        letter-spacing: 1.95px;
+        text-transform: uppercase;
+        opacity: 1;
+    }
+
+    a, img {
+        height: 13px;
+        color: black;
+        text-decoration: none;
+    }
+
+    &__left, &__right, &__center {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left, &__right {
+        gap: 20px;
+    }
+
+    &__right {
+        img {
+            margin-left: 10px;
+            
+        }
+       
+    }
+
+    &__center {
+        position: absolute;
+        img {
+            height: 28px;  // Height for the logo
+        }
+    }
+}
