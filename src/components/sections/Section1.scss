@@ -1,0 +1,77 @@
+// src/styles/Section1.scss
+.section1 {
+  background-image: url("https://i.ibb.co/GWJx9fm/2132-C2-6-2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 663px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; // add this line
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); // black with 0.2 opacity
+  }
+    
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px; // this will apply the 15px gap between all direct children
+      height: calc(100% - 30px); 
+      position: relative;
+      padding: 0 20px; // consider some side padding if needed
+    
+      .title {
+        font: normal normal bold 70px/84px 'Barlow Condensed', sans-serif;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+        text-align: center;
+        top: 190px;
+        
+      }
+  
+      .description {
+        text-align: center;
+        font: normal normal normal 17px/25px 'Nunito', sans-serif;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        opacity: 1;
+        max-width: 770px;
+      }
+  
+      .explore-link {
+        position: absolute;
+        bottom:30px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        height: 15px;
+
+        .arrow {
+          height: 15px;
+        }
+    
+        span {
+          text-align: center;
+          font: normal normal bold 14px/18px 'Josefin Sans', sans-serif;
+          letter-spacing: 2.1px;
+          color: #FFFFFF;
+          text-transform: uppercase;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  

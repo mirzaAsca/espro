@@ -1,0 +1,19 @@
+// src/styles/ButtonWhite.scss
+
+.button-white {
+    width: 208px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal normal bold 12px/14px 'Josefin Sans', sans-serif;
+    letter-spacing: 1.8px;
+    color: #221F20;
+    text-transform: uppercase;
+    opacity: 1;
+    border: none;
+    cursor: pointer;
+    border-radius: 26px;
+  }
+  
